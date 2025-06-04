@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP | Kayıt Ol</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <%- include('partials/header') %>  
+ 
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Hesap Oluştur</h2>
+          
+            <form action="/register" method="post" class="auth-form">
+                <input type="email" name="email" placeholder="E-posta Adresiniz" required class="auth-input">
+                <input type="password" name="password" placeholder="Şifre" required class="auth-input">
+                <button type="submit" class="auth-button email"><i class="fa fa-user"></i> E-posta ile Kayıt Ol</button>
+            </form>
+
+            <div class="social-buttons">
+                <button class="auth-button google" onclick="window.location.href='/auth/google'">
+                    <i class="fa fa-google"></i> 
+                </button>
+                <button class="auth-button facebook" onclick="window.location.href='/auth/facebook'">
+                    <i class="fa fa-facebook"></i> 
+                </button>
+                <button class="auth-button youtube" onclick="window.location.href='/auth/youtube'">
+                    <i class="fa fa-youtube"></i> 
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <%- include('partials/footer') %>  
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

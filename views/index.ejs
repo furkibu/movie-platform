@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIKO | Dizi ve Anime İzle</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <%- include('partials/header') %>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">🎬 AIKO'ya Hoş Geldiniz!</h1>
+            <p class="hero-subtitle">Dilediğiniz zaman, dilediğiniz yerden en sevdiğiniz içeriklere ulaşın.</p>
+            <button class="btn-primary" onclick="window.location.href='/sayfa'">🎉 Şimdi İzlemeye Başla</button>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h3 class="featured-title">🔥 Öne Çıkan Diziler</h3>
+            <div class="grid">
+                <div class="card">
+                    <a href="/dizi/tulsa-king">
+                        <img src="https://tr.web.img2.acsta.net/pictures/22/06/10/16/50/5509057.jpg" alt="Tulsa King">
+                    </a>
+                    <h4>Tulsa King</h4>
+                    <p>Hapisten çıkan bir mafyanın yeni bir başlangıç arayışı.</p>
+                    <p>Sezon: 1 | İzlenme: 1M+</p>
+                </div>
+                <div class="card">
+                    <a href="/dizi/alice-in-borderland">
+                        <img src="https://images.justwatch.com/poster/253109058/s718/jin-ji-noguo-noarisu.jpg" alt="Alice in Borderland">
+                    </a>
+                    <h4>Alice in Borderland</h4>
+                    <p>Gerçeklikten uzaklaşan bir dünyada hayatta kalma savaşı.</p>
+                    <p>Sezon: 2 | İzlenme: 750K+</p>
+                </div>
+                <div class="card">
+                    <a href="/dizi/the-witcher">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/0/02/The_Witcher_afi%C5%9F.jpg" alt="The Witcher">
+                    </a>
+                    <h4>The Witcher</h4>
+                    <p>Canavarlardan çok daha tehlikeli olan insanlar arasında bir avcı.</p>
+                    <p>Sezon: 3 | İzlenme: 500K+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h3 class="featured-title">🎥 Öne Çıkan Filmler</h3>
+            <div class="grid">
+                <div class="card">
+                    <a href="/film/inception">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/7/7f/Inception_tek_afis.jpg" alt="Inception">
+                    </a>
+                    <h4>Inception</h4>
+                    <p>Rüya içinde rüya... Zihinlerin içine giren suçlular.</p>
+                    <p>Süre: 2s 28dk | İzlenme: 2M+</p>
+                </div>
+                <div class="card">
+                    <a href="/film/interstellar">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/b/bc/Interstellar_film_poster.jpg" alt="Interstellar">
+                    </a>
+                    <h4>Interstellar</h4>
+                    <p>İnsanlığın geleceği için yıldızlar arası bir yolculuk.</p>
+                    <p>Süre: 2s 49dk | İzlenme: 1.5M+</p>
+                </div>
+                <div class="card">
+                    <a href="/film/spiderman-no-way-home">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/9/90/Spider-Man_No_Way_Home_Poster.jpg" alt="Spider-Man: No Way Home">
+                    </a>
+                    <h4>Spider-Man: No Way Home</h4>
+                    <p>Çoklu evrenin kapıları açılıyor, eski dostlar ve düşmanlar dönüyor.</p>
+                    <p>Süre: 2s 28dk | İzlenme: 3M+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h3 class="featured-title">🌸 Öne Çıkan Animeler</h3>
+            <div class="grid">
+                <div class="card">
+                    <a href="/anime/akame-ga-kill">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZjU2ZDZkYmMtYTA3Yi00NTZkLTgzYjgtOTRhMTFiOWFkODZmXkEyXkFqcGdeQXVyNjkyODc3NjQ@._V1_.jpg" alt="Akame ga Kill">
+                    </a>
+                    <h4>Akame Ga Kill</h4>
+                    <p>Tatsumi'nin devlete karşı savaşan bir grup suikastçıya katılma hikayesi.</p>
+                    <p>Sezon: 1 | İzlenme: 1M+</p>
+                </div>
+                <div class="card">
+                    <a href="/anime/wotakoi">
+                        <img src="https://www.atomcomics.pl/environment/cache/images/0_0_productGfx_203784/decb4ae9040a3e1e1cd3f45d3e02aa3e.jpg" alt="Wotakoi">
+                    </a>
+                    <h4>Wotakoi: Love is Hard for Otaku</h4>
+                    <p>İş ve aşkı bir arada yürütmeye çalışan otaku çiftin eğlenceli yaşamı.</p>
+                    <p>Sezon: 1 | İzlenme: 500K+</p>
+                </div>
+                <div class="card">
+                    <a href="/anime/ao-ashi">
+                        <img src="https://www.animefantastica.com/wp-content/uploads/aoashi-anime-serisi.png" alt="Ao Ashi">
+                    </a>
+                    <h4>Ao Ashi</h4>
+                    <p>Futbol tutkunu genç bir yeteneğin yükselme hikayesi.</p>
+                    <p>Sezon: 1 | İzlenme: 700K+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AIKO Development. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script>
+    // Hero bölümündeki butona tıklandığında sayfayı yukarı kaydır
+    document.querySelector('.btn-primary').addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });

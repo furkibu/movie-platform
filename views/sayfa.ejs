@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP | Dizi, Anime İzle</title>
+    <link rel="stylesheet" href="/css/film.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+
+    <%- include('partials/header') %>  
+    
+    <!-- Popüler Diziler -->
+    <section class="section popular">
+        <div class="container">
+            <h2>Popüler Diziler</h2>
+            <div class="grid" id="popular-grid">
+                <!-- Dizi 1 -->
+                <div class="card">
+                    <img src="https://tr.web.img2.acsta.net/pictures/22/06/10/16/50/5509057.jpg" alt="Tulsa King">
+                    <div class="overlay">
+                        <button>İzle</button>
+                        <button>Daha Sonra İzle</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Tulsa King</h4>
+                        <p>Hapisten çıkan bir mafyanın hikayesi.</p>
+                        <p>Sezon: 1 | İzlenme: 1,000,000+</p>
+                    </div>
+                </div>
+    
+                <!-- Dizi 2 -->
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNhEdqy95u93-EDtUOh1Ed4vPRzkUQTbNFg&s" alt="Alice in Borderland">
+                    <div class="overlay">
+                        <button>İzle</button>
+                        <button>Daha Sonra İzle</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Alice in Borderland</h4>
+                        <p>İşsiz bir gencin hayatta kalma mücadelesi.</p>
+                        <p>Sezon: 2 | İzlenme: 750,000+</p>
+                    </div>
+                </div>
+    
+                <!-- Dizi 3 -->
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9l0qTSnfSABEG9p9ZJqMeLaqaMBQAQvyufQ&s" alt="The Witcher">
+                    <div class="overlay">
+                        <button>İzle</button>
+                        <button>Daha Sonra İzle</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>The Witcher</h4>
+                        <p>Kiralık mutant canavar avcısının hikayesi.</p>
+                        <p>Sezon: 3 | İzlenme: 500,000+</p>
+                    </div>
+                </div>
+    
+                <!-- Dizi 4 -->
+                <div class="card">
+                    <img src="https://flxt.tmsimg.com/assets/p18348824_b_v13_aa.jpg" alt="Stranger Things">
+                    <div class="overlay">
+                        <button>İzle</button>
+                        <button>Daha Sonra İzle</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Stranger Things</h4>
+                        <p>Küçük bir kasabada gizemli olaylar.</p>
+                        <p>Sezon: 4 | İzlenme: 2,000,000+</p>
+                    </div>
+                </div>
+    
+                <!-- Dizi 5 -->
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/81niXI2hGTL._AC_SL1500_.jpg" alt="Breaking Bad">
+                    <div class="overlay">
+                        <button>İzle</button>
+                        <button>Daha Sonra İzle</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Breaking Bad</h4>
+                        <p>Kimya öğretmeninden uyuşturucu lorduna dönüşüm.</p>
+                        <p>Sezon: 5 | İzlenme: 3,000,000+</p>
+                    </div>
+                </div>
+            </div>
+            <button id="load-more-popular" class="load-more-btn">Daha Fazla Göster</button>
+        </div>
+    </section>
+    
+
+    <!-- Anime Filmleri -->
+    <section class="section anime-films">
+        <div class="container">
+            <h2>Anime Filmleri</h2>
+            <div class="grid" id="anime-films-grid">
+                <!-- Dinamik anime kartları burada yer alacak -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Vizyondaki Filmler -->
+    <section class="section now-playing">
+        <div class="container">
+            <h2>Vizyondaki Filmler</h2>
+            <div class="grid" id="now-playing-grid">
+                <!-- Dinamik film kartları burada yer alacak -->
+            </div>
+        </div>
+    </section>
+
+    <!-- İzlemeye Devam Et -->
+    <section class="section continue-watching">
+        <div class="container">
+            <h2>İzlemeye Devam Et</h2>
+            <div class="grid" id="continue-watching-grid">
+                <!-- Dinamik içerikler burada yer alacak -->
+            </div>
+        </div>
+    </section>
+    
+    <%- include('partials/footer') %> 
+    <script src="/js/script.js"></script>
+</body>
+</html>

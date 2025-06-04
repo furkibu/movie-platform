@@ -1,0 +1,46 @@
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-6A7f8ZyYx47CQlm/bGg7B7P8uPhFiwft+C7s0v/m/Ev6k2P1QoElcRMY8GRwI/9zo1W1bfUhPHsI2z00mK8GQ==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Righteous&family=Secular+One&family=Unbounded:wght@500&family=Vazirmatn:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js"></script>
+<script src="https://kit.fontawesome.com/124df49da5.js" crossorigin="anonymous"></script>
+
+</head>
+<header class="header">
+    <div class="container">
+        <h1>OP Watch</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/">Ana Sayfa</a></li>
+                <li><a href="#">Popüler Diziler</a></li>
+                <li><a href="#">Yeni Çıkanlar</a></li>
+                <li><a href="#">Kategoriler</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <% if (user) { %>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar" src="https://cdn.discordapp.com/avatars/<%= user.id %>/<%= user.avatar %>" alt="User Avatar"> @<%= user.username %> <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/profile">Profil</a></li>
+                            <li><a href="/logout" style="color: red;">Çıkış</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <% } else { %>
+                <ul class="nav navbar-nav navbar-right">
+                  
+                    <button class="btn-secondary" onclick="window.location.href='/giris-yap'">Giriş Yap </button>
+                    <button class="btn-primary" onclick="window.location.href='/kayit-ol'">Kayıt Ol</button>
+                </ul>
+            <% } %>
+        </div>
+    </div>
+</header>

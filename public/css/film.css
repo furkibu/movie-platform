@@ -1,0 +1,99 @@
+h1, h2 {
+    text-align: center;
+    color: #ffcc00;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cards {
+    position: relative;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.cards img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.cards-content {
+    padding: 10px;
+}
+
+.cards h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.cards p {
+    margin: 0;
+    color: #bbb;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.load-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.load-more-btn:hover {
+    background-color: #ff9900;
+}
+
+/* Kart üzerindeki butonlar */
+.cards .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.cards:hover .overlay {
+    opacity: 1;
+}
+
+.card .overlay button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #121212;
+}
+
+.card .overlay button:hover {
+    background-color: #ff9900;
+}

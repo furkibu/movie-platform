@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ops Bir hata var!</title>
+    <link rel="stylesheet" href="/styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #141414;
+            margin: 0;
+            padding: 0;
+        }
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .error-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; 
+            margin-bottom: 20px;
+        }
+        .error-message {
+            font-size: 24px;
+            color: #f4f4f4;
+            margin-bottom: 20px;
+        }
+        .error-code {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+        .back-to-home {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .back-to-home:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code"><h1><%= errorCode %></h1></div>
+       <div class="error-message">Üzgünüz, bir hata oluştu.</div>
+        <a href="/" class="back-to-home">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>
